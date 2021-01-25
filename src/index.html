@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Zoom Meetings Scheduler</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <table id="main_table" style="width:100%">
+      <tr>
+        <th>Meeting</th>
+        <th>Days</th>
+        <th>Time</th>
+        <th>Misc</th>
+      </tr>
+      <tr>
+        <td class="c1">Fetching Data...</td>
+        <td class="c2_day">Null</td>
+        <td class="c2">00:00</td>
+        <td class="c3"><button>Open</button><button>Delete</button></td>
+      </tr>
+    </table>
+
+    <table id="input_table" style="width:100%">
+      <tr>
+        <td class="itc1" onclick="hideCheckboxes()"><input type="text" id="class_name" placeholder="Meeting Name..." value=""></td>
+        <td class="itc2" onclick="hideCheckboxes()"><input type="time" id="class_time" value=""></td>
+        <td>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <select>
+                <option><h3>Days</h3></option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+              <label for="sunday"><input type="checkbox" id="sunday"> Sunday</label>
+              <label for="monday"><input type="checkbox" id="monday"> Monday</label>
+              <label for="tuesday"><input type="checkbox" id="tuesday"> Tuesday</label>
+              <label for="wednesday"><input type="checkbox" id="wednesday"> Wednesday</label>
+              <label for="thursday"><input type="checkbox" id="thursday"> Thursday</label>
+              <label for="friday"><input type="checkbox" id="friday"> Friday</label>
+              <label for="saturday"><input type="checkbox" id="saturday"> Saturday</label>
+            </div>
+          </div>
+        </td>
+        <td class="itc3" onclick="hideCheckboxes()"><input type="text" id="class_link" placeholder="Zoom Link..." value=""></td>
+        <td class="itc4" onclick="hideCheckboxes()"><button onclick="handleInputForm()">Add Meeting</button></td>
+      </tr>
+    </table>
+    <div id="settings"><input type="checkbox" id="auto_open" oninput="handleCheckboxInput()" checked><label for="auto_open">Automatically Join Zoom Meetings</label></div>
+
+    <script defer src="index.js"></script>
+  </body>
+</html>

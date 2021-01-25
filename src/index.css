@@ -1,0 +1,110 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  /* overflow-y: hidden; Hide vertical scrollbar */
+}
+
+body {
+  /* background-color: black; */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  /* overflow-x: hidden; Hide horizontal scrollbar */
+}
+
+#main_table, #input_table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+
+.c2_day {
+  text-align: center;
+  width: 130px;
+}
+
+.c2 {
+  text-align: center;
+  width: 90px;
+}
+
+.c3 {
+  text-align: center;
+  width: 175px;
+}
+
+#main_table tr td button {
+  padding: 5px 15px;
+  margin: 0px 5px;
+}
+
+#main_table tr:nth-child(even) {
+  background-color: #eee;
+}
+#main_table tr:nth-child(odd) {
+  background-color: #fff;
+}
+#main_table th {
+  color: white;
+  background-color: grey;
+}
+
+#input_table tr td button {
+  padding: 5px 15px;
+}
+
+#input_table {
+  margin-top: 20px;
+}
+
+#input_table tr td {
+  text-align: center;
+}
+
+#settings {
+  width: 98%;
+  margin-top: 5px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+#settings input {
+  margin-right: 5px;
+}
+
+.multiselect {
+  width: 100px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+  text-align: left;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
