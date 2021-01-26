@@ -37,7 +37,6 @@ ipcMain.on('load-zoom-link', async (event, arg) => {
     width: 800,
     height: 600,
     resizable: false,
-    icon:'logo.ico',
     alwaysOnTop: true,
     show: false
   });
